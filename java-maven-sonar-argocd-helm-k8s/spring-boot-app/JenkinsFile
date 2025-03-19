@@ -22,7 +22,7 @@ pipeline {
     }
     stage('Static Code Analysis') {
       environment {
-        SONAR_URL = "https://symmetrical-space-guide-699v4777g6wvhrj5j-9000.app.github.dev/"
+        SONAR_URL = "http://54.89.38.2:9000/"
       }
       steps {
         withCredentials([string(credentialsId: 'sona_cred', variable: 'SONAR_AUTH_TOKEN')]) {
